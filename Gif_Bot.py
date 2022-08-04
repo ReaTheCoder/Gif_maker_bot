@@ -19,8 +19,8 @@ import warnings
 
 
 #receive the updates from Telegram and to deliver them to said dispatcher
-bot = Bot(token="5585415565:AAEJ0Q0dXfBu2USLVayR9C3p8mIVvTfXdYE")
-updater = Updater(token="5585415565:AAEJ0Q0dXfBu2USLVayR9C3p8mIVvTfXdYE" , use_context=True)
+bot = Bot(token="Token")
+updater = Updater(token="Token" , use_context=True)
 
 #interduce the dispatcher locally for quicker access
 dispatcher = updater.dispatcher
@@ -327,7 +327,7 @@ dispatcher.add_handler(handle_converstation_using_Button)
 """
 def ContactDev(update,context):
    
-    bot.send_contact(chat_id=update.effective_chat.id, contact= Contact(phone_number="+46 73 095 7299", first_name="Reihaneh"))
+    bot.send_contact(chat_id=update.effective_chat.id, contact= Contact(phone_number="+46 70 428 2679", first_name="Reihaneh"))
 
 dispatcher.add_handler(CommandHandler("ContactDeveloper" , ContactDev))
 
